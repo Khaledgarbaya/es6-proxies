@@ -27,3 +27,9 @@ npm install
 ```bash
 npm run test-final:watch
 ```
+
+## Resources
+Recorded presentation
+[![ES6-Proxies](https://img.youtube.com/vi/QXmqpsviMc4/0.jpg)](https://www.youtube.com/watch?v=QXmqpsviMc4)
+
+Presentation : https://goo.gl/AZQXCp
