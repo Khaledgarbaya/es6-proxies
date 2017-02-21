@@ -1,4 +1,4 @@
-# ES6 Proxies Presentation by Khaled Garbaya - Nodejs Berlin at Contentful 
+## ES6 Proxies Presentation by Khaled Garbaya - Nodejs Berlin at Contentful 
 
 Source for Nodejs meetup talk 
 
