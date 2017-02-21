@@ -29,7 +29,8 @@ npm run test-final:watch
 ```
 
 ## Resources
-Watch the presentation 
+
+Watch the presentation by clicking the image bellow
 
 [![ES6-Proxies](https://img.youtube.com/vi/QXmqpsviMc4/0.jpg)](https://www.youtube.com/watch?v=QXmqpsviMc4)
 
