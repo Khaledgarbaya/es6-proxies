@@ -1,4 +1,5 @@
-# es6-proxies
+# ES6 Proxies Presentation by Khaled Garbaya - Nodejs Berlin at Contentful 
+
 Source for Nodejs meetup talk 
 
 ## Getting started
