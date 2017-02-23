@@ -65,6 +65,36 @@ test('migrate object with backward compatibility using get, set and has traps', 
   proxy.userGroup = 'NodeMeetup'
   expect(proxy.userGroup).toBe('NodeMeetup')
 })
+test('inheritance || branching', () => {
+  class Author {}
+  class Admin {}
+  class Developer {}
+  class Writer {}
+
+  function target(){}
+  const handler = {
+    construct : (target, args) => {
+      const [userType] = args
+      switch (userType) {
+        case 'admin':
+          return new Admin(args)
+        case 'author':
+          return new Author(args)
+        case 'developer':
+          return new Developer(args)
+        case 'writer':
+          return new Writer(args)
+      }
+    }
+  }
+  const User = new Proxy(target, handler)
+
+  expect(new User('admin').constructor.name).toBe('Admin')
+  expect(new User('writer').constructor.name).toBe('Writer')
+  expect(new User('developer').constructor.name).toBe('Developer')
+  expect(new User('author').constructor.name).toBe('Author')
+})
+
 test('Bonus: Python like array, if the index is -1 return last item', () => {
   const target = []
   const handler = {
