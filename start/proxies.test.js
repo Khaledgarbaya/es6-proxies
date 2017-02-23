@@ -33,11 +33,6 @@ test.skip('inheritance || branching', () => {
   function target(){}
   const handler = {}
   const User = new Proxy(target, handler)
-
-  expect(new User('admin').constructor.name).toBe('Admin')
-  expect(new User('writer').constructor.name).toBe('Writer')
-  expect(new User('developer').constructor.name).toBe('Developer')
-  expect(new User('author').constructor.name).toBe('Author')
 })
 
 test.skip('Bonus: Python like array, if the index is -1 return last item', () => {
