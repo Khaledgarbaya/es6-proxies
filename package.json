@@ -17,7 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^3.15.0",
-    "eslint-plugin-jest": "^1.0.2",
+    "eslint-plugin-jest": "^21.27.2",
     "jest": "^18.1.0"
   }
 }
